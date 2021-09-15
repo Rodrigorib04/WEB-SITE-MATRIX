@@ -1,0 +1,114 @@
+*{
+    padding: 0px;
+    margin: 0px;
+box-sizing: border-box;
+    
+
+    }
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+   background-image: url(Cerfificados/rod.gif);
+   background-size: cover;
+
+
+   
+    
+}
+.box{
+  display: flex;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    transform-style: preserve-3d;
+    animation: animate 20s linear infinite;
+    
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: perspective(1000px) rotateX(0deg) rotateY(35deg);
+    }
+    100%
+    {
+        transform: perspective(1000px)rotateX(360deg)rotateY(35deg);
+    }
+}
+.box span{
+    padding:absolute ;
+    top: 0px;
+    left: 0px;
+    width: 5%;
+    height: 5%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateX(calc(var(--i) * 45deg)) translateZ(360px);
+  
+}
+.box span img{
+position: absolute;
+  top: 0px;
+  left: 0;
+  width: 800%;
+  height: 800%;
+  object-fit: scale-down;
+  align-items: center;
+
+}
+
+
+.h{
+    display: flex;
+    font-size: 20px;
+    font-family: serif;
+    color: greenyellow;
+    text-align: center;
+
+}
+.abc {
+    
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 30px;
+  background-color: blue;
+    color:blue;
+    text-decoration: none;
+    border:  2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 25px;
+transition: transform .4s;
+
+}
+.abc:hover{
+    transform: scale(1.1);
+    transition: 5ms;
+    color: greenyellow;
+    background-image: url(Cerfificados/rod.gif);
+}
+
+.ab {
+    
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 30px;
+  background-color: rgb(243, 14, 14);
+    color: red;
+    text-decoration: none;
+    border:  2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 25px;
+transition: transform .4s;
+
+}
+.ab:hover{
+    transform: scale(1.1);
+    transition: 5ms;
+    color: greenyellow;
+    background-image: url(Cerfificados/rod.gif);
+}
